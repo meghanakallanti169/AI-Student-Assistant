@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Smart Learning Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🤖 AI Smart Learning Assistant</h1>
+
+    <!-- Question Input -->
+    <textarea
+        id="question"
+        placeholder="Ask any topic for better understanding...">
+    </textarea>
+
+    <!-- Main Buttons -->
+    <div class="buttons">
+        <button onclick="askAI()">Ask AI</button>
+        <button onclick="clearChat()">Clear Chat</button>
+        <button onclick="downloadNotes()">Download Notes</button>
+    </div>
+
+    <!-- Learning Helper Buttons -->
+    <div class="learning-tools">
+        <button onclick="quickPrompt('Explain simply')">
+            Explain
+        </button>
+
+        <button onclick="quickPrompt('Give short notes')">
+            Notes
+        </button>
+
+        <button onclick="quickPrompt('Give real life example')">
+            Example
+        </button>
+
+        <button onclick="quickPrompt('Important exam points')">
+            Exam Prep
+        </button>
+    </div>
+
+    <!-- Loading Message -->
+    <div id="loading"></div>
+
+    <!-- Chat Output -->
+    <div id="chatBox"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
