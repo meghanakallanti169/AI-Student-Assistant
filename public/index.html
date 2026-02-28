@@ -4,55 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Smart Learning Assistant</title>
+<title>AI Student Assistant</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>🤖 AI Smart Learning Assistant</h1>
+    <h1>🤖 AI Student Assistant</h1>
 
     <!-- Question Input -->
-    <textarea
-        id="question"
-        placeholder="Ask any topic for better understanding...">
-    </textarea>
+    <div class="input-section">
 
-    <!-- Main Buttons -->
-    <div class="buttons">
+        <h3>✏️ Enter your question or problem</h3>
+
+        <textarea
+            id="question"
+            placeholder="Example: Explain Binary Search with example">
+        </textarea>
+
+        <br>
+
         <button onclick="askAI()">Ask AI</button>
         <button onclick="clearChat()">Clear Chat</button>
-        <button onclick="downloadNotes()">Download Notes</button>
+
     </div>
 
-    <!-- Learning Helper Buttons -->
-    <div class="learning-tools">
-        <button onclick="quickPrompt('Explain simply')">
-            Explain
-        </button>
+    <!-- Explanation Section -->
+    <div class="solution-section">
 
-        <button onclick="quickPrompt('Give short notes')">
-            Notes
-        </button>
+        <h3>📘 Here is your detailed explanation</h3>
 
-        <button onclick="quickPrompt('Give real life example')">
-            Example
-        </button>
+        <div id="chatBox">
+            <div class="ai">
+                AI explanation will appear here...
+            </div>
+        </div>
 
-        <button onclick="quickPrompt('Important exam points')">
-            Exam Prep
-        </button>
     </div>
 
-    <!-- Loading Message -->
-    <div id="loading"></div>
+    <!-- Video Section -->
+    <div class="video-section">
 
-    <!-- Chat Output -->
-    <div id="chatBox"></div>
+        <h3>🎥 Detailed video related to that topic</h3>
+
+        <div id="videoBox">
+            Video explanation will appear here...
+        </div>
+
+    </div>
 
 </div>
 
